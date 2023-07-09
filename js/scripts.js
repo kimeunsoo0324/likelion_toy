@@ -41,3 +41,14 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
   container.classList.remove("right-panel-active");
 });
+
+/* 사진 여러장 첨부 */
+
+function addPhotoInput() {
+        const container = document.getElementById('photo-container');
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.name = 'photo[]';
+        input.className = 'form-control mt-3';
+        container.appendChild(input);
+    }
